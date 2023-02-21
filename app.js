@@ -57,9 +57,12 @@ app.get("/logout",(req,res)=>{
     req.session.destroy()
     res.redirect("/")
 })
-// app.get("*",(req,res)=>{
+app.get('*',(req,res)=>{
+
+    res.render('404')
     
-// })
+})
+
 
 app.listen(3000,()=>{
     console.log("server started to listning");
