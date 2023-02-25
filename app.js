@@ -33,7 +33,7 @@ let password="123456"
 
 app.get("/",(req,res)=>{ 
     sessions=req.session;
-    // console.log(sessions.username);
+    console.log(sessions.username);
     if(sessions.username){
         res.render("home")  
     }else{
