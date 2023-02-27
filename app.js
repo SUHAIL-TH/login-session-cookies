@@ -63,5 +63,5 @@ app.get('*',(req,res)=>{
 
 
 app.listen(3000,()=>{
-    console.log("server started to listning");
+    console.log("server started to listning port 3000");
 })
