@@ -47,7 +47,7 @@ app.post("/login",(req,res)=>{
         sessions.username=req.body.email
         res.render("home")
     }else{
-        res.render("login",{error:"invalid username or password"})
+        res.render("login",{error:"invalid username or  password"})
     }   
 })
 
